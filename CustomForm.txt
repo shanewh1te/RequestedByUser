@@ -1,0 +1,6 @@
+{
+	columnFieldList: [
+		{ DataType: "UserPicker", PropertyDisplayName: "Created By User", PropertyName: "CreatedWorkItem", Disabled: true },
+		{ DataType: "UserPicker", PropertyDisplayName: "Requested By User", PropertyName: "RequestedByUser", Disabled: true }
+	],
+},
