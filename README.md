@@ -6,7 +6,7 @@ The Problem!
 
 I started looking into this issue once a few customers had reported it and wanted to see if there was a solution, so what was the problem? Well, adding in these 2 fields onto a custom form in the portal requires you to put the property name on the form. The Property name is the target name of the relationship in this case. 
 
-However, the Target name for the RequestedByUser and CreatedByUser relationships are identical, which is down to Microsoft for coding it like this...  
+However, the Target name for the RequestedByUser and CreatedByUser relationships are identical, which is down to Microsoft for coding it like this...
 
 You then need to use a custom type projection against the form to load in both relationships as there is not a type projection out of the box that includes RequestedByUser. You’d think at this point all was setup and ready to work as expected… But in the portal, it brings back 2 identic targetId’s, one for CreatedByUser and one for RequestedByUser and the custom form does not understand which one to use and fails. 
 
